@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #43c3ff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
 header {
   margin: 0 180px;
   -webkit-box-pack: justify;
@@ -103,7 +115,7 @@ main .landing {
 }
 
 main .landing img {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 main .landing .left {
@@ -112,8 +124,8 @@ main .landing .left {
   color: #444343;
 }
 
-main .landing .left .bold {
-  font-family: mostrat2;
+main .landing .left h2 {
+  font-family: mostrat;
   font-size: 35px;
 }
 
@@ -141,7 +153,402 @@ main .landing .left .benefit .icon h6 {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 980px) {
+main .ln2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+main .ln2 .image {
+  margin-right: 60px;
+  margin-left: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+main .ln2 .image p {
+  font-family: mostrat;
+  font-weight: lighter;
+}
+
+main .ln3 .center {
+  text-align: center;
+  margin-top: 60px;
+}
+
+main .ln3 .center h1 {
+  font-size: 26px;
+  font-family: roboto;
+  font-weight: bold;
+  color: #444343;
+}
+
+main .ln3 .center .p {
+  font-size: 22px;
+  font-weight: 100;
+}
+
+main .ln3 .bidding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+main .ln3 .bidding .items {
+  text-align: center;
+  margin: 0 10px;
+  color: #444343;
+}
+
+main .ln3 .bidding .items .tb {
+  border: 0.5px solid #b1b1b1;
+  padding: 0 15px;
+  font-family: mostrat;
+}
+
+main .ln3 .bidding .items .tb h3 {
+  font-size: 25px;
+  padding: 5px 0;
+  font-weight: bold;
+  color: #444343;
+}
+
+main .ln3 .bidding .items .tb .discon {
+  padding: 10px 0;
+}
+
+main .ln3 .bidding .items .tb .discon strike {
+  font-size: 14px;
+}
+
+main .ln3 .bidding .items .tb .discon h2 {
+  font-size: 30px;
+}
+
+main .ln3 .bidding .items .tb .discon h2 sup {
+  font-weight: 400;
+}
+
+main .ln3 .bidding .items .tb .users {
+  padding: 10px 0;
+}
+
+main .ln3 .bidding .items .tb .benefit {
+  padding: 10px 0;
+}
+
+main .ln3 .bidding .items .tb .benefit p {
+  margin-top: 5px;
+}
+
+main .ln3 .bidding .items .tb .benefit button {
+  margin-top: 20px;
+  padding: 7px 20px;
+  border: 1.6px solid #636363;
+  border-radius: 100px;
+  background-color: white;
+  font-weight: bold;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+main .ln3 .bidding .items .tb .benefit button:hover {
+  background-color: #29a3f5;
+  border: 1.6px solid white;
+  color: white;
+  padding: 7px 20px;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb {
+  border: 1px solid #29a3f5;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb h3 {
+  color: black;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb .benefit button {
+  background-color: #29a3f5;
+  color: white;
+  border: 1.6px solid #29a3f5;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb .benefit button:hover {
+  background-color: white;
+  color: black;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb:nth-child(1),
+main .ln3 .bidding .items:nth-child(3) .tb:nth-child(2) {
+  background-color: #29a3f5;
+  color: white;
+  border: 1px solid #29a3f5;
+}
+
+main .ln3 .bidding .items:nth-child(3) .tb:nth-child(3) {
+  background-color: #0099ff;
+  border: 1px solid #29a3f5;
+  color: white;
+}
+
+main .ln4 {
+  color: #444343;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+main .ln4 .center {
+  text-align: center;
+}
+
+main .ln4 .center h3 {
+  font-family: mostrat;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+main .ln4 .tb-parent {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ln4 .tb-parent .tb {
+  margin: 0 20px;
+  text-align: center;
+}
+
+main .ln4 .tb-parent .tb .tb-child {
+  border: 1px solid #444343;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 100px 8px 0px;
+}
+
+main .ln4 .tb-parent .tb .tb-child p {
+  margin-left: 70px;
+}
+
+main .ln4 .tb-parent .tb .tb-child:nth-child(2) {
+  background-color: #d4d4d4;
+  border-top: none;
+  border-bottom: none;
+}
+
+main .ln5 {
+  color: #444343;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+}
+
+main .ln5 .center {
+  text-align: center;
+}
+
+main .ln5 .center h3 {
+  font-family: mostrat;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+main .ln5 .package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ln5 .package .items {
+  width: 230px;
+  text-align: center;
+  margin: 0 50px;
+  margin-top: 60px;
+}
+
+main .ln5 .package .items h6 {
+  font-size: 16px;
+  font-family: mostrat;
+}
+
+main .ln5 .package .items p {
+  font-size: 12px;
+}
+
+main .ln6 {
+  margin-top: 70px;
+}
+
+main .ln6 .center {
+  text-align: center;
+}
+
+main .ln6 .center h3 {
+  font-family: mostrat;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+main .ln6 img {
+  margin-top: 10px;
+}
+
+main .ln6 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .ln6 .flex .left {
+  width: 50%;
+  margin-top: 50px;
+  color: #444343;
+}
+
+main .ln6 .flex .left h6 {
+  font-size: 18px;
+  font-family: mostrat;
+  font-weight: lighter;
+}
+
+main .ln6 .flex .left .benefit {
+  margin-top: 30px;
+}
+
+main .ln6 .flex .left .benefit .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-family: mostrat2;
+}
+
+main .ln6 .flex .left .benefit .icon h6 {
+  font-size: 15px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+main .ln6 .flex .left p {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+main .ln6 .flex .left button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #43c3ff;
+  font-size: 17px;
+  border-radius: 100px;
+  color: white;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+main .ln6 .flex .left button:hover {
+  background-color: white;
+  border: 1px solid #43c3ff;
+  color: #43c3ff;
+}
+
+main .ln7 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  color: #444343;
+}
+
+main .ln7 .center {
+  text-align: center;
+}
+
+main .ln7 .center h3 {
+  font-family: mostrat;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+main .ln7 .list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 150px;
+  margin-top: 40px;
+}
+
+main .ln7 .list .list-child p {
+  margin-top: 2px;
+}
+
+main .ln7 button {
+  padding: 7px 50px;
+  margin-top: 40px;
+  border: 1px solid #333333;
+  border-radius: 100px;
+  font-size: 17px;
+  background-color: white;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+main .ln7 button:hover {
+  background-color: #43c3ff;
+  border: 1px solid #43c3ff;
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
   header {
     margin: 0 70px;
     margin-bottom: 10px;
