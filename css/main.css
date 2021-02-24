@@ -157,13 +157,15 @@ main .ln2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 70px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 main .ln2 .image {
@@ -176,6 +178,15 @@ main .ln2 .image {
 main .ln2 .image p {
   font-family: mostrat;
   font-weight: lighter;
+}
+
+main .ln3 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .ln3 .center {
@@ -202,9 +213,9 @@ main .ln3 .bidding {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-top: 60px;
 }
 
@@ -236,11 +247,12 @@ main .ln3 .bidding .items .tb .discon strike {
 }
 
 main .ln3 .bidding .items .tb .discon h2 {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 main .ln3 .bidding .items .tb .discon h2 sup {
   font-weight: 400;
+  font-size: 20px;
 }
 
 main .ln3 .bidding .items .tb .users {
@@ -256,7 +268,7 @@ main .ln3 .bidding .items .tb .benefit p {
 }
 
 main .ln3 .bidding .items .tb .benefit button {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 7px 20px;
   border: 1.6px solid #636363;
   border-radius: 100px;
@@ -264,6 +276,7 @@ main .ln3 .bidding .items .tb .benefit button {
   font-weight: bold;
   -webkit-transition: .3s linear;
   transition: .3s linear;
+  margin-bottom: 20px;
 }
 
 main .ln3 .bidding .items .tb .benefit button:hover {
@@ -273,12 +286,18 @@ main .ln3 .bidding .items .tb .benefit button:hover {
   padding: 7px 20px;
 }
 
+main .ln3 .bidding .items .tb:nth-child(1),
+main .ln3 .bidding .items .tb:nth-child(2),
+main .ln3 .bidding .items .tb:nth-child(3) {
+  border-bottom: none;
+}
+
 main .ln3 .bidding .items:nth-child(3) .tb {
   border: 1px solid #29a3f5;
 }
 
 main .ln3 .bidding .items:nth-child(3) .tb h3 {
-  color: black;
+  color: white;
 }
 
 main .ln3 .bidding .items:nth-child(3) .tb .benefit button {
@@ -444,7 +463,7 @@ main .ln6 .flex .left {
 }
 
 main .ln6 .flex .left h6 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: mostrat;
   font-weight: lighter;
 }
@@ -467,6 +486,10 @@ main .ln6 .flex .left .benefit .icon h6 {
   margin-left: 10px;
 }
 
+main .ln6 .flex .left .benefit .icon h6 b {
+  color: black;
+}
+
 main .ln6 .flex .left p {
   margin-top: 30px;
   font-size: 13px;
@@ -476,7 +499,7 @@ main .ln6 .flex .left button {
   margin-top: 30px;
   padding: 10px 30px;
   border: none;
-  background-color: #43c3ff;
+  background-color: #29a3f5;
   font-size: 17px;
   border-radius: 100px;
   color: white;
@@ -487,8 +510,8 @@ main .ln6 .flex .left button {
 
 main .ln6 .flex .left button:hover {
   background-color: white;
-  border: 1px solid #43c3ff;
-  color: #43c3ff;
+  border: 1px solid #29a3f5;
+  color: whitesmoke;
 }
 
 main .ln7 {
@@ -543,9 +566,178 @@ main .ln7 button {
 }
 
 main .ln7 button:hover {
-  background-color: #43c3ff;
-  border: 1px solid #43c3ff;
+  background-color: #29a3f5;
+  border: 1px solid #29a3f5;
   color: white;
+}
+
+main .ln8 {
+  margin-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ln8 img {
+  margin-top: 10px;
+}
+
+main .ln8 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .ln8 .flex img {
+  margin-top: 100px;
+}
+
+main .ln8 .flex .left {
+  width: 50%;
+  margin-top: 50px;
+  color: #5a5a5a;
+}
+
+main .ln8 .flex .left h6 {
+  font-size: 26px;
+  font-family: mostrat;
+  font-weight: lighter;
+  width: 350px;
+}
+
+main .ln8 .flex .left p {
+  margin-top: 30px;
+  font-size: 15px;
+  width: 75%;
+}
+
+main .ln8 .flex .left p b {
+  color: black;
+}
+
+main .ln8 .flex .left button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #29a3f5;
+  font-size: 17px;
+  border-radius: 100px;
+  color: white;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+}
+
+main .ln8 .flex .left button:hover {
+  background-color: white;
+  border: 1px solid #29a3f5;
+  color: #29a3f5;
+}
+
+.ln9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 10px;
+  background-color: whitesmoke;
+}
+
+.ln9 .left {
+  margin: 0 180px;
+}
+
+.ln9 .left h6 {
+  font-family: mostrat;
+  color: #444343;
+  font-size: 15px;
+}
+
+.ln9 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 180px;
+}
+
+.ln9 .right .icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 5px;
+}
+
+.ln9 .right .icon p {
+  border: 1px solid #444343;
+  padding: 5px 10px;
+  margin-left: 2px;
+  border-radius: 3px;
+  color: #444343;
+}
+
+.ln9 .right .icon:nth-child(3) {
+  margin-right: 200px;
+}
+
+.ln10 {
+  padding: 50px 10px;
+  background-color: #29a3f5;
+  color: white;
+}
+
+.ln10 .left {
+  margin: 0 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ln10 .left h2 {
+  font-family: mostrat;
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.ln10 .left .icon {
+  width: 170px;
+  height: 45px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100px;
+  background-color: #29a3f5;
+  color: white;
+}
+
+.ln10 .left .icon p {
+  margin-left: 15px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
