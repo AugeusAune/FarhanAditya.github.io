@@ -3,6 +3,5 @@ const link = document.querySelector('.link');
 
 click.addEventListener('click', function() {
     click.classList.toggle('active');
-    link.classList.toggle('active');
-    
+    link.classList.toggle('active');  
 })

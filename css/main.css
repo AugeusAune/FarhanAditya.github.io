@@ -511,7 +511,7 @@ main .ln6 .flex .left button {
 main .ln6 .flex .left button:hover {
   background-color: white;
   border: 1px solid #29a3f5;
-  color: whitesmoke;
+  color: #29a3f5;
 }
 
 main .ln7 {
