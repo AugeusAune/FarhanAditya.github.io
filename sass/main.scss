@@ -18,10 +18,10 @@ body::-webkit-scrollbar {
     width: 0.25rem;
 }
 body::-webkit-scrollbar-track {
-    background: #43c3ff;
+    background: #e625ff;
 }
 body::-webkit-scrollbar-thumb {
-    background: #ffffff;
+    background: #18cbf8;
 }
 
 header{
@@ -536,6 +536,106 @@ main {
                 font-size: 20px;
             }
         }
+    }
+}
+
+footer{
+    background-color: rgb(54, 54, 54);
+    color: rgb(110, 110, 110);
+    .container{
+        @include container();
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        .items{
+            flex-basis: 25%;
+            margin-top: 60px;
+            .roof{
+                margin-bottom: 20px;
+            }
+            h2{
+                text-transform: uppercase;
+                font-size: 15px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            p{
+                color: rgb(196, 196, 196);
+                font-size: 13px;
+                margin-top: 5px;
+            }
+        } .items:nth-child(7){
+            .button{
+                input{
+                    width: 80%;
+                    height: 45px;
+                    padding-left: 20px;
+                    border-radius: 30px;
+                    font-size: 16px;
+                }
+                button{
+                    position:relative;
+                    margin-left: -125px;
+                    padding: 10px 15px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: rgb(41, 163, 245);
+                    color: white;
+                }
+            }
+            p{
+                font-size: 14px;
+                margin-top: 5px;
+                width: 80%;
+            }
+        } .items:nth-child(8){
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 13%;
+                width: 50px;
+                height: 50px;
+                border: 2px solid white;
+                border-radius: 50%;
+            }
+        }
+        .paid{
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            h2{
+                text-transform: uppercase;
+                font-size: 15px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            img:not(:nth-child(1)){
+                margin-left: 20px;
+            }
+            p{
+                color: rgb(110, 110, 110);
+                font-size: 13px;
+                margin-top: 20px;
+            }
+        }
+    }
+    hr{
+        margin-top: 20px;
+    }
+    .copyright{
+        @include container();
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 13px;
+        margin-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
